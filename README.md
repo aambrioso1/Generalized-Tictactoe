@@ -15,11 +15,13 @@ https://en.m.wikipedia.org/wiki/Gomoku
 https://playtictactoe.org
 
 Things to do
+
 Post my text TTT game.
 Post generalized matrix and first programming ideas.
 Write up some short and long term goals for the description.
 
 Some goals
+
 Write a text version of the generalized game that allows two human players to play the game.
 Write a GUI version using Tkinter.
 Write a version so that a human can play the computer.
