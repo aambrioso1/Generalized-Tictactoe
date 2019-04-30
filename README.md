@@ -1,9 +1,8 @@
-# Generalized-Tictactoe
-A project to Generalized TTT, also known as The m, n, k-game:  https://en.m.wikipedia.org/wiki/M,n,k-game.
+# Generalized-Tictactoe (TTT)
 
 Generalized TTT, also know as The m, n, k-game, is a generalization of TTT played on an board with m rows and n columns. Players try to get k in row either horizontally, vertically, or diagonally. Well-known versions of the game are TTT which is (3,3,3) and Gomoku which is either (15,15,5) or (19, 19, 5).
 
-The initial programming will be in Python perhaps using Tkinter for the GUI.
+The initial programming will be in Python probably using Tkinter for the GUI.
 
 Some helpful websites:
 
