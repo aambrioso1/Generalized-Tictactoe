@@ -14,6 +14,11 @@ https://en.m.wikipedia.org/wiki/Gomoku
 
 https://playtictactoe.org
 
+Another interesting generalization is Harary’s 3-dimensional version of
+tic-tac-toe:
+
+https://en.m.wikipedia.org/wiki/Harary%27s_generalized_tic-tac-toe
+
 Things to do
 
 Post my text TTT game.
