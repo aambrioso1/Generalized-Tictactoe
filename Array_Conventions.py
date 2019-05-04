@@ -1,4 +1,4 @@
-# We begin with the follow structure. 
+# We begin with the follow structure.
 # The board is a numpy array of integers.
 # An empty square is represent by a 0.
 # The first player’s moves are  represented by 1.
@@ -9,16 +9,22 @@
 
 import numpy as np
 
-m=2
-n=2
+# Initialize the board array with m rows and n columns.
+m = 3
+n = 3
 
 matrix = np.zeros(shape=(m,n), dtype = int)
 
 print(matrix)
-
+pairs = []
+for i in range(m):
+    for j in range(n):
+        pairs.append((i,j))
+print(pairs)
+print(dict(zip(range(1,10),pairs)))
 
 # Need to generalize and automate the construction of this dictionary with zip().
-dict = {1:(0,0), 2:(0,1), 3:(1,0),4:(1,1)}
+dict = dict(zip(range(1,10),pairs))
 
 def move(rc, n):
     row = rc[0]
@@ -29,5 +35,6 @@ move((1,1), 1)
 move((0,0), -1)
 move(dict[2], 1)
 move(dict[3], -1)
+move(dict[9], 1)
 
 print(matrix)
