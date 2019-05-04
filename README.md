@@ -19,15 +19,15 @@ tic-tac-toe:
 
 https://en.m.wikipedia.org/wiki/Harary%27s_generalized_tic-tac-toe
 
-Things to do
+We begin with the following converntions and structure.  The board is a numpy array of integers. An empty square is represent by a 0. The first player’s moves are  represented by 1. The second player's moves are represented by -1. We adopt the convention that the squares are represented by a tuple of integers (row, col). We will also use the convention that the squares are numbered from 1 to (number of rows) x (number of columns) starting at the upper left and moving across a row then to the next row.
 
-Post my text TTT game.
-Post generalized matrix and first programming ideas.
-Write up some short and long term goals for the description.
+Short-term goals
+(1) Create a function ListGames(m,n) that generates a file with allpossible "games."   A "game" is a board filled with x's and o's such that the numbe of x's is etiher equal to the number o's or greater by 1 depending on where there are a odd or even number of squares.   This functions will be useful for finding won and drawn games.   We can use theres for later attempts at machine learning.
 
-Some goals
+(2) Create a function In_a_Row(square) that takes a square on the board and returns how many of the mark on that square there are in a row. If the square is empty it returns 0.  
 
-Write a text version of the generalized game that allows two human players to play the game.
-Write a GUI version using Tkinter.
-Write a version so that a human can play the computer.
-Use machine learning to create an AI version of the game.
+Some long-term goals
+(1) Write a text version of the generalized game that allows two human players to play the game.
+(2) Write a GUI version using Tkinter.
+(3) Write a version so that a human can play aqainst the program.
+(4) Use machine learning to create an AI version of the game.
