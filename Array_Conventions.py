@@ -1,5 +1,3 @@
-
-
 # We begin with the follow structure. 
 # The board is a numpy array of integers.
 # An empty square is represent by a 0.
