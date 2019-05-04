@@ -1,0 +1,19 @@
+import numpy  # Used for the board array called matrix
+
+n = 8
+
+# Initializing an empty board array:  an empty square will be set at 0, the first player's moves are resprented with 1's, and the second player's moves are respresented with -1.  The initial board is all zeros.
+
+matrix = numpy.zeros(shape=(n, n), dtype=int)
+
+# Making a couple of moves.
+matrix[3, 5] = 1
+matrix[3, 7] = -1
+
+
+def printMat(M):
+    s = [[str(e) for e in row] for row in M]
+    lens = [max(map(len, col)) for col in zip(*s)]
+    fmt = '\t'.join('{{:{}}}'.format(x) for x in lens)
+    table = [fmt.format(*row) for row in s]
+    print('\n'.join(table))
