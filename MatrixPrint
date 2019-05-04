@@ -1,3 +1,5 @@
+# The function printMat(M) prints out the matrix M in near columns and rows.
+
 import numpy  # Used for the board array called matrix
 
 n = 8
