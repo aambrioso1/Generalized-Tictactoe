@@ -3,38 +3,41 @@
 # An empty square is represent by a 0.
 # The first player’s moves are  represented by 1.
 # The second player's moves are represented by -1.
-# We adopt the convention that the squares are respresented by a tuple of integers (row, col).
+# We adopt the convention that the squares are represented by a tuple of integers (row, col).
 # Also useful is the convention that the squares are numbered from 1 to m x n starting at the
 # upper left and move across a row then to the next row.
 
-import numpy as np
+from numpy import zeros
 
 # Initialize the board array with m rows and n columns.
 m = 3
 n = 3
 
-matrix = np.zeros(shape=(m,n), dtype = int)
+matrix = zeros(shape=(m, n), dtype=int)
 
 print(matrix)
 pairs = []
 for i in range(m):
     for j in range(n):
-        pairs.append((i,j))
+        pairs.append((i, j))
 print(pairs)
-print(dict(zip(range(1,10),pairs)))
+print(dict(zip(range(1, 10), pairs)))
 
 # Need to generalize and automate the construction of this dictionary with zip().
-dict = dict(zip(range(1,10),pairs))
+sq = dict(zip(range(1, 10), pairs))
 
-def move(rc, n):
+
+def move(rc, c):
     row = rc[0]
     col = rc[1]
-    matrix[row, col] = n
+    matrix[row, col] = c
 
-move((1,1), 1)
-move((0,0), -1)
-move(dict[2], 1)
-move(dict[3], -1)
-move(dict[9], 1)
+
+move((1, 1), 1)
+move((0, 0), -1)
+move(sq[2], 1)
+move(sq[3], -1)
+move(sq[9], 1)
 
 print(matrix)
+
