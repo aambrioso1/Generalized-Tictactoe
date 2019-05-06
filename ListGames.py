@@ -7,11 +7,11 @@
 import numpy as np
 from itertools import permutations
 # def ListGames(r, c):
-  
+
 # Waht follows is a sketch of a program that will do the job.  At the end, gamelist is a list of all the matrices in the form described in the intial remarks.
 
-r = 2 #The number of rows
-c = 3 # THe number of columns
+r = 3 # The number of rows
+c = 3 # The number of columns
 
 matrix = np.empty((r,c), dtype=int)
 
@@ -23,6 +23,8 @@ iterable = ''
 for i in range((r * c) // 2): # Assuming r * c is even.  Need to write an if statement to handle r * c odd.
     iterable += '1'
     iterable += '0'
+    if (r * c) % 2 == 1:
+        iterable += '1'
 
 games = set(permutations(iterable, len(iterable)))
 
