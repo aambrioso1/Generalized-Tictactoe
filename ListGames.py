@@ -2,5 +2,11 @@
 
 # This will result in 2^(m x n) "games."  That should be small enough assuming r x c is <= 25.
 
-# This is not really the number of games since the order of play makes and difference in a game.   Also a game ends when either player gets n in a row.
+# This list will not list all of the games since the order of play makes a difference in a game.   Also a game ends when either player gets n in a row.
 
+import numpy as np
+
+def ListGames(r, c):
+  # r is the number rows and c is the number of column in the board.
+  
+  # code ...
