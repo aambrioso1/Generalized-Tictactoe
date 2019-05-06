@@ -1,3 +1,2 @@
-Generalized-Tictactoe
-A project to create a generalized tictactoe game using Python.  
-Look in the repository for the project description for more details.
+Generalized-Tictactoe is repository for a project to create a generalized tictactoe game using Python.  
+Look for the project description in the repository for more details.
