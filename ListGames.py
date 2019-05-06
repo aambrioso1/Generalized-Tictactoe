@@ -7,6 +7,7 @@
 import numpy as np
 
 def ListGames(r, c):
+  # We will create all the binary strings from 1 to r x c.   Then use these to generate the matrices.
   # r is the number rows and c is the number of column in the board.
   
   # code ...
