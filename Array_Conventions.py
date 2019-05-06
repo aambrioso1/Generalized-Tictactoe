@@ -1,6 +1,6 @@
 # We begin with the following structure.
 # The board is a numpy array of integers.
-# An empty square is represent is empty.
+# An empty square is empty.
 # The first player’s moves are  represented by 1.
 # The second player's moves are represented by 0.
 # We adopt the convention that the squares are represented by a tuple of integers (row, col).
