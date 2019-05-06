@@ -8,7 +8,7 @@ import numpy as np
 from itertools import permutations
 # def ListGames(r, c):
 
-# Waht follows is a sketch of a program that will do the job.  At the end, gamelist is a list of all the matrices in the form described in the intial remarks.
+# What follows is a sketch of a program that will do the job.  At the end, gamelist is a list of all the matrices in the form described in the intial remarks.
 
 r = 3 # The number of rows
 c = 3 # The number of columns
