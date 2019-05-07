@@ -23,7 +23,7 @@ for i in range(m):
 print(pairs)
 print(dict(zip(range(1, 10), pairs)))
 
-# Need to generalize and automate the construction of this dictionary with zip().
+# A dictionary pairing square numbers as key with tuples, (r,c), as values.
 sq = dict(zip(range(1, 10), pairs))
 
 
