@@ -1,12 +1,20 @@
-# Create a function ListGames(r,c) that generates a file with all possible "games."   A "game" is a board completely filled with x's and o's as if the players atlernated moves but did not check if either player won the game.  The number of x's is either equal to the number o's or greater by 1 depending on whether there are an even or odd number of squares.   This functions will be useful for finding won and drawn games.   We can use the list for later attempts at machine learning.
+# This file will be a library of counting functions for Generalized Tictactoe
+
+
+
+
+# Create a function FilledBoards(r,c) that generates a file with all possible "games."   A "game" is a board completely filled with x's and o's as if the players atlernated moves but did not check if either player won the game.  The number of x's is either equal to the number o's or greater by 1 depending on whether there are an even or odd number of squares.   This functions will be useful for finding won and drawn games.   We can use the list for later attempts at machine learning.
 
 # This will result (r x c)!/((r x c) / 2)!)^2 or (r x c)!/((r x c) // 2)!)(((r x c) // 2 +1)!) games if r x c is even or odd respectfully.
 
 # This list will not list all of the games since the order of play makes a difference in a game.   Also a game ends when either player gets n in a row.
 
+# Also create functions to generate all possible (r x c)! games assuming players continue to play until the board is filled.  This will be limited to small boards.   It will be interesting to see how big they can get in Pycharm. This function can be modified to terminate when either side wins.
+# Functions that take into account symmetry to cut down on the counting may be useful.
+
 import numpy as np
 from itertools import permutations
-# def ListGames(r, c):
+# def FilledBoards(r, c):
 
 # What follows is a sketch of a program that will do the job.  At the end, gamelist is a list of all the matrices in the form described in the intial remarks.
 
