@@ -7,13 +7,13 @@
 # We will also use the convention that the squares are numbered from 1 to (number of rows) x (number of columns) starting at the
 # upper left and moving across a row then to the next row.
 
-from numpy import zeros
+import numpy as np
 
 # Initialize the board array with m rows and n columns.
 m = 3
 n = 3
 
-matrix = empty(shape=(m, n), dtype=int)
+matrix = np.empty(shape=(m, n), dtype=int)
 
 print(matrix)
 pairs = []
