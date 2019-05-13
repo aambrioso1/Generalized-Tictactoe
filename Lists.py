@@ -1,5 +1,6 @@
 # This file will be a library of counting functions for Generalized Tictactoe
-
+import numpy as np
+from itertools import permutations
 
 
 
@@ -12,8 +13,7 @@
 # Also create functions to generate all possible (r x c)! games assuming players continue to play until the board is filled.  This will be limited to small boards.   It will be interesting to see how big they can get in Pycharm. This function can be modified to terminate when either side wins.
 # Functions that take into account symmetry to cut down on the counting may be useful.
 
-import numpy as np
-from itertools import permutations
+
 # def FilledBoards(r, c):
 
 # What follows is a sketch of a program that will do the job.  At the end, gamelist is a list of all the matrices in the form described in the intial remarks.

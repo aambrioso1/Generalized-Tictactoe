@@ -1,3 +1,4 @@
+import numpy as np
 # We begin with the following structure.
 # The board is a numpy array of integers.
 # An empty square is empty.
@@ -7,7 +8,6 @@
 # We will also use the convention that the squares are numbered from 1 to (number of rows) x (number of columns) starting at the
 # upper left and moving across a row then to the next row.
 
-import numpy as np
 
 # Initialize the board array with m rows and n columns.
 m = 3
