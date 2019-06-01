@@ -3,9 +3,13 @@
 # def createboard(m, n)
 # creates an empty m x n array
 
-# def printboard(board)
-# prints out board nicely
-
+# Prints out out the nicely.
+def printboard(board):
+    s = [[str(e) for e in row] for row in board]
+    lens = [max(map(len, col)) for col in zip(*s)]
+    fmt = '\t'.join('{{:{}}}'.format(x) for x in lens)
+    table = [fmt.format(*row) for row in s]
+    print('\n'.join(table))
 
 # move(mark, board, square)
 # places mark on the board at square
