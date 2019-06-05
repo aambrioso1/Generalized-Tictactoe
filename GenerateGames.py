@@ -1,5 +1,5 @@
 # This program will generate games on a board.   The idea is to indicate moves by alternating square numbers.
-# The goal is two create to functions one that generates all possible complete games on r x c board and another
+# The goal is two create two functions one that generates all possible complete games on r x c board and another
 # that takes a game listed as square numbers and place the move on the board one move at a time.
 
 import numpy as np
@@ -17,7 +17,7 @@ def print_mat(m):
     print('\n'.join(table))
 
 
-rows = 4
+rows = 5
 columns = 4
 
 r = rows
@@ -58,40 +58,43 @@ list1 = permutations([str(i) for i in range(1, rxc+1)])
 # Now we need to take each one of these lists and place each stone on the board alternating stone colors as we do.
 
 # This function takes an tuple(row, column) and places and stone (0, 1, None) on the board bd(global)
-def move(rc, s):
+def move(board, rc, s):
     row = rc[0]
     col = rc[1]
-    bd[row, col] = s
+    board[row, col] = s
+    return board
 
 
 # Make a list with stones on appropriate squares.
 # for i in range(9):
 #   print(list1[9][i])
 
-#  Need create functions:  GenerateGames(r,c,num) and PlayGame(r,c,movelist)
+# Need to create functions:  GenerateGames(r,c,num) and PlayGame(r,c,movelist)
+# Generates a list of n of all the possible games given an empty board
+# https://wiki.python.org/moin/Generators
 
-
-for i in islice(list1,5):
+# def GenerateGames(board, n):
+for i in islice(list1, 5):
     for j in range(rxc):
         play = int(i[j])
-        if j%2 == 0:
-            move(sq[play], 1)
-        if j%2 == 1:
-            move(sq[play], 0)
-    print(f"Games: {i}\n{bd}")
+        if j % 2 == 0:
+            move(bd, sq[play], 1)
+        if j % 2 == 1:
+            move(bd, sq[play], 0)
+    print(f"Game moves are{i}\n{bd}")
 
-
-bd = empty_bd
 """
-print(f"Here is {list1[0]} played out:")
+bd = empty_bd
+print(f"Here is {islice(list1,0)} played out:")
 for j in range(0, rxc):
-    play = int(list1[0][j])
+    play = int(islice(list1,0)[j])
     if j % 2 == 0:
         move(sq[play], 1)
     if j % 2 == 1:
         move(sq[play], 0)
     print(bd)
-"""
+
 # print(f"\nThis is game {i+1}: {list1[i]}")
-# print_mat(bd)
+print_mat(bd)
 # ttt.print_mat(bd)
+"""
