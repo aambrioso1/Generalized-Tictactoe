@@ -2,7 +2,7 @@
 Tic-Tac-Toe Program based on a program found here:
 https://www.geeksforgeeks.org/python-implementation-automatic-tic-tac-toe-game-using-random-number/
 
-The sise of the board is arbitrary and controlled by the size variable
+The sise of the board is arbitrary and controlled by the size variable.
 
 The user can input moves based on the move dictionary:  { 1: (0,0), 2: (0, 1), ...}.
 
@@ -10,10 +10,12 @@ Players are:
 1 for X (moves first)
 2 for O (moves second)
 
-Outcomes are indicate as follows:
+Outcomes are indicated as follows:
 Winner is: 1
 Winner is: 2
 Winner is: -1 if its a draw (cat's game)
+
+Has nice imput checking in the make_a_move function using the try statement and exception handlling.
 
 
 If the function make_a_move(board, player) is commented out and random_place(board, player) is put back in CPU will play both sides with random moves.
