@@ -2,7 +2,7 @@
 Tic-Tac-Toe Program based on a program found here:
 https://www.geeksforgeeks.org/python-implementation-automatic-tic-tac-toe-game-using-random-number/
 
-The sise of the board is arbitrary and controlled by the size variable.
+The size of the board is arbitrary and controlled by the size variable.
 
 The user can input moves based on the move dictionary:  { 1: (0,0), 2: (0, 1), ...}.
 
@@ -27,7 +27,7 @@ import random
 from time import sleep # I commented the use of time.sleep out.   May need it for CPU play.
 
 # Determines the size of the board (size x size)
-size = 5
+size = 15
 
 # Creates an empty board of zeros with dimensions size x size
 def create_board():
@@ -144,7 +144,7 @@ def evaluate(board):
 def play_game(): 
 	board, winner, counter = create_board(), 0, 1
 	print(board) 
-	sleep(2) 
+	# sleep(2) 
 	
 
 	while winner == 0: 
